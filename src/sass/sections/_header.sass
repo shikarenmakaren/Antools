@@ -1,0 +1,57 @@
+.header 
+    padding: 30px 0
+
+    &__info
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__list
+        display: flex
+        justify-content: space-between
+
+
+    &__item
+        position: relative
+        cursor: pointer
+
+        margin-right: 50px
+
+        font-size: 16px
+        color: rgba(255, 255, 255, 0.55)
+
+        &_mod
+            // margin-right: 18px
+            
+        &_mod::after
+            content: ''
+            position: absolute
+            top: 4px
+
+            width: 18px
+            height: 18px
+            background: url('../../icons/chevron-down.svg') center center/cover no-repeat
+
+    &__item:hover
+        color: $main-color
+
+ 
+    &__login
+        margin-right: 41px
+
+        color: rgba(255, 255, 255, 0.55)
+
+    &__login:hover
+        color: $main-color
+
+    &__signup
+        color: #fff
+
+
+    &__signup, &__login
+        display: inline-block
+        font-size: 16px
+
+
+
+
